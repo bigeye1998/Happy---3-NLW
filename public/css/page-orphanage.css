@@ -1,0 +1,145 @@
+#page-orphanage {
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.orphanage-details {
+    width: 70.8rem;
+    margin: 6.4rem auto;
+    background: white;
+
+    border: 0.1rem solid #D3E2E5;
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+
+.orphanage-details > img {
+    width: 100%;
+    height: 33.6rem;
+    object-fit: cover;
+    
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+
+    margin: 2.4rem 3.2rem 0;
+}
+
+.images button {
+    background: none;
+    border: none;   
+    border-radius: 2rem;
+
+    height: 9.4rem;
+    cursor: pointer;
+
+    overflow: hidden;
+
+    opacity: .6;
+
+    transition: opacity .2s;
+}
+
+.images button:hover,
+.images button.active{
+    opacity: 1;
+}
+
+.images button img {
+    width: 100%;
+    height: 9.4rem;
+    object-fit: cover; 
+}
+
+#mapid {
+    width: 100%;
+    height: 29.1rem;
+    border-bottom: .1rem solid #DDE3F0;
+    border-radius: 2rem;
+}
+
+/* Informações do orfanato */
+.orphanage-details-content {
+    padding: 8rem;
+}
+
+.orphanage-details-content h1 {
+    font: 700 5.4rem/1 'Nunito', sans-serif;
+    color: #4D6F80;
+    margin-bottom: 3.2rem;
+}
+
+.orphanage-details-content P {
+    font: 600 1.8rem/1.56 'Nunito', sans-serif;
+    color: #5C8599;
+
+    margin-bottom: 6.4rem;
+}
+
+.orphanage-details-content hr {
+    width: 100%;
+    height: .1rem;
+    border: none;
+
+    background: #D3E2E5;
+
+    margin-bottom: 6.4rem;
+}
+
+.orphanage-details-content h2 {
+    font: 700 3.6rem/1.28 'Nunito', sans-serif;
+    color: #4D6F80;
+    margin-bottom: 2.4rem;
+}
+
+.open-details {
+    margin-top: 2.4rem;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.open-details div {
+    padding: 3.2rem 9.4rem 3.2rem 2.4rem;
+}
+
+.open-details img {
+    display: block;
+    margin-bottom: 1.6rem;
+}
+
+.open-details .hour {
+    background: linear-gradient(149.97deg, #E6F7FB 8.13%, #FFFFFF 92.67%);
+    border: 1px solid #B2DAE2;
+    border-radius: 2rem;
+
+    font: 600 1.8rem/1.56 'Nunito', sans-serif;
+    color: #5C8599;
+}
+
+.open-details .open-on-weekends {
+    border-radius: 2rem;
+    font: 600 1.8rem/1.56 'Nunito', sans-serif;
+    
+}
+
+.open-on-weekends.true {
+    background: linear-gradient(154.16deg, #EDFFF6 7.85%, #FFFFFF 91.03%);
+    border: 1px solid #A1E9C5;
+    color: #37C77F;
+}
+
+.open-on-weekends.false {
+    background: linear-gradient(154.16deg, #FCF0F4 7.85%, #FFFFFF 91.03%);
+    border: 1px solid #FFBCD4;
+    color: #FF999D;
+}

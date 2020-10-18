@@ -1,0 +1,116 @@
+form {
+    width: 70.8rem;
+    margin: 6.4rem auto;
+    background: white;
+
+    border: 0.1rem solid #D3E2E5;
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+    padding: 8rem;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    width: 100%;
+
+    font: 700 3.2rem/1.06 'Nunito', sans-serif;
+    color: #4D6F80;
+
+    border-bottom: 1px solid #D3E2E5;
+    margin-bottom: 4rem;
+    padding: 2.4rem;
+}
+
+.input-block + .input-block {
+    margin-top: 2.4rem;
+}
+
+.input-block label {
+    color: #8FA7B2;
+    font: 600 1.6rem/1.38 'Nunito', sans-serif;
+}
+
+.input-block label span {
+    color: #8FA7B2;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.input-block input,
+.input-block textarea {
+    width: 100%;
+    
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+
+    border-radius: 2rem;
+
+    color: #5c8599;
+    outline:none;
+
+}
+
+.input-block input:focus,
+.input-block textarea:Focus {
+    border: 3px solid #b3dffc;
+}
+
+.input-block input {
+    height: 6.4rem;
+    padding: 0 2.4rem;
+}
+
+.input-block textarea {
+    height: clamp(8rem, 12rem, 20rem);
+    padding: 0 2.4rem;
+    resize: vertical;
+    line-height: 2.8rem;
+}
+
+.input-block input:valid,  
+.input-block textarea:valid { 
+    border: 1px solid #A1E9C5;
+}
+
+.input-block.images button {
+    width: 100%;
+    height: 6.4rem;
+
+    margin-top: 1.2rem;
+    padding: 2.4rem 0;
+    
+    background: #F5F8FA;
+    border: 1px dashed #96D2F0;
+    border-radius: 2rem;
+
+    cursor: pointer;
+    outline:none;
+}
+
+
+.new-upload {
+    position: relative;
+}
+
+.new-upload img {
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1.3rem;
+    padding: .7rem;
+    display: flex;
+
+    background: white;
+    border: 1px solid #D3E2E5;
+    border-radius: 1rem;
+
+    cursor: pointer;
+}
+
+.new-upload + .new-upload {
+    margin-top: 1.2rem;
+}
